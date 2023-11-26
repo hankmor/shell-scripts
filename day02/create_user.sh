@@ -31,7 +31,7 @@ if ! which mkpasswd; then
     apt-get install whois -y
 fi
 
-# 生成 00 到 09 的序列，-w 参数让生成的序列数字等宽
+# 生成 00 到 04 的序列，-w 参数让生成的序列数字等宽
 q=`seq -w 0 04`
 for n in ${q}; do
     # 生成随机密码
